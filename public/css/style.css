@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -13,17 +12,15 @@
     height: 100vh;
     width: 700px;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo da imagem no centro */
 .imagem-capo-verde {
-    width: 430px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 600px;
+    height: auto;
 }
 
-/* Container do formulário */
 .container {
     display: flex;
     align-items: center;
@@ -32,21 +29,21 @@
     margin-left: 750px;
 }
 
-/* Formulário */
 .campoDeCadastro {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     text-align: center;
+    width: 350px;
+    padding: 30px;
+    background-color: transparent;
 }
 
-/* Grupo do input com imagem */
 .input-group {
     position: relative;
-    width: 250px;
+    width: 100%;
 }
 
-/* Ícones dentro do campo */
 .input-icon {
     position: absolute;
     left: 10px;
@@ -56,35 +53,29 @@
     height: 20px;
 }
 
-/* Campos de entrada */
 .campos {
     width: 100%;
-    height: 40px;
+    height: 45px;
     border-radius: 40px;
     border: 1px solid rgb(95, 95, 95);
-    padding: 5px 15px 5px 40px; /* Ajuste para não sobrepor o ícone */
-    font-size: 16px;
+    padding: 5px 15px 5px 40px;
+    font-size: 18px;
     outline: none;
     background-color: #D9D9D9;
 }
 
-/* Botão */
 #Cadastrar_button {
-    
-    width: 200px;
-    height: 35px;
+    width: 100%;
+    height: 50px;
     border-radius: 40px;
-    border: 1px solid black; 
+    border: 1px solid black;
     background-color: rgba(255, 149, 0, 0.56);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-/* Efeito ao passar o mouse no botão */
 #Cadastrar_button:hover {
     background-color: rgba(255, 149, 0, 0.8);
 }
-
-
