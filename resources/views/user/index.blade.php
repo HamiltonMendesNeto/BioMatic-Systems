@@ -14,7 +14,7 @@
     <div class="campo_verde">
         <img src="{{ URL::asset('imagens/Captura de tela 2025-02-28 150031.png') }}" class="imagem-capo-verde" alt="Foto Horta">
     </div>
-
+    
     <div class="container">
         <div class="campoDeCadastro">
             <h1>Bem-Vindo</h1>
