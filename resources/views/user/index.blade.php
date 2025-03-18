@@ -51,6 +51,7 @@
         @endforeach
         
     @endif
+    <a href="{{route('user.controle')}}">controle </a>
                  
                 </div>
                 <center> <button id="Cadastrar_button" type="submit">Cadastrar</button></center>

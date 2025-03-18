@@ -31,6 +31,14 @@ class UserController extends Controller
    public function integrantes(){
       return view('user.integrantes');
    }
+   public function controle(){
+      $user = User::orderByDesc('id')->get();
+
+      return view('user.controle', ['user' => $user]);
+   }
+   public function show(User $user){
+      return view('user.show', ['user' => $user]);
+  }
 
    public function store(Requisitos $request){
 

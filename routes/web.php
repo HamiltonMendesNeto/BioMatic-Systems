@@ -9,3 +9,5 @@ Route::get('/galeria', [UserController::class, 'galeria'])->name('user.galeria')
 Route::get('/menu', [UserController::class, 'menu'])->name('user.menu');
 Route::get('/integrantes', [UserController::class, 'integrantes'])->name('user.integrantes');
 Route::post('/menu', [UserController::class, 'store'])->name('user.store');
+Route::get('/show-user/{user}', [UserController::class, 'show'])->name('user.show');
+Route::get('/controle', [UserController::class, 'controle'])->name('user.controle');
