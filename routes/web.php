@@ -8,3 +8,4 @@ Route::get('/sobreNos', [UserController::class, 'sobreNos'])->name('user.sobreNo
 Route::get('/galeria', [UserController::class, 'galeria'])->name('user.galeria');
 Route::get('/menu', [UserController::class, 'menu'])->name('user.menu');
 Route::get('/integrantes', [UserController::class, 'integrantes'])->name('user.integrantes');
+Route::post('/menu', [UserController::class, 'store'])->name('user.store');

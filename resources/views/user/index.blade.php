@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
     <div class="campo_verde">
         <img src="{{ URL::asset('imagens/Captura de tela 2025-02-28 150031.png') }}" class="imagem-capo-verde" alt="Foto Horta">
     </div>
@@ -20,24 +21,41 @@
             <h1>Bem-Vindo</h1>
             <h2>Crie sua conta</h2>
 
-            <div class="input-group">
-                <img src="{{ URL::asset('imagens/imagem-do-usuario-com-fundo-preto.png') }}" class="input-icon" alt="Usuário">
-                <input class="campos" type="text" placeholder="Nome">
+            <form action="{{route('user.store')}}" method="POST">
+                @csrf
+                @method('POST')
 
-            </div>
+                <div class="input-group">
+                 <img src="{{ URL::asset('imagens/imagem-do-usuario-com-fundo-preto.png') }}" class="input-icon" alt="Usuário">
+                    <input class="campos" type="text" name="name" placeholder="Nome" value="{{ old('name')}}">
 
-            <div class="input-group">
-                <img src="{{ URL::asset('imagens/o-email.png') }}" class="input-icon" alt="E-mail">
-                <input class="campos" type="email" placeholder="E-mail">
-            </div>
+                </div>
+
+                <div class="input-group">
+                 <img src="{{ URL::asset('imagens/o-email.png') }}" class="input-icon" alt="E-mail">
+                  <input class="campos" type="email" name="email" placeholder="E-mail" value="{{ old('email')}}">
+                </div>
            
 
-            <div class="input-group">
-                <img src="{{ URL::asset('imagens/cadeado.png') }}" class="input-icon" alt="Senha">
-                <input class="campos" type="password" placeholder="Senha">
-            </div>
-            <center> <button id="Cadastrar_button">Cadastrar</button></center>
+                 <div class="input-group">
+                 <img src="{{ URL::asset('imagens/cadeado.png') }}" class="input-icon" alt="Senha">
+                 <input class="campos" type="password" name="password" placeholder="Senha">
+                 
+    @if ($errors->any())
+    
+        @foreach ($errors->all() as $error)
+            <p style="color: #f00">
+                {{ $error }}
+            </p>
+            
+        @endforeach
+        
+    @endif
+                 
+                </div>
+                <center> <button id="Cadastrar_button" type="submit">Cadastrar</button></center>
            
+            </form>
         </div>
     </div>
     

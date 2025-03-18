@@ -21,7 +21,6 @@
             </ul>
         </nav>
         <div class="icones">
-            <a href="{{route('user.menu')}}"><img src="{{ URL::asset('imagens/botao-voltar.png') }}" alt="Voltar"></a>
             <a href="{{route('user.index')}}"><img src="{{ URL::asset('imagens/imagem-do-usuario-com-fundo-preto.png') }}" alt="Perfil"></a>
         </div>
     </header>
