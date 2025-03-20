@@ -11,3 +11,6 @@ Route::get('/integrantes', [UserController::class, 'integrantes'])->name('user.i
 Route::post('/menu', [UserController::class, 'store'])->name('user.store');
 Route::get('/show-user/{user}', [UserController::class, 'show'])->name('user.show');
 Route::get('/controle', [UserController::class, 'controle'])->name('user.controle');
+
+Route::get('/editar-user/{user}', [UserController::class, 'editar'])->name('user.editar');
+Route::put('/atualizar-user/{user}', [UserController::class, 'atualizar'])->name('user.atualizar');

@@ -40,6 +40,7 @@
                  <div class="input-group">
                  <img src="{{ URL::asset('imagens/cadeado.png') }}" class="input-icon" alt="Senha">
                  <input class="campos" type="password" name="password" placeholder="Senha">
+                 </form>
                  
     @if ($errors->any())
     

@@ -23,9 +23,11 @@ class Requisitos extends FormRequest
      */
     public function rules(): array
     {
+        $userID = $this->route('user');
+
         return [
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
         ];
     }
@@ -34,6 +36,8 @@ class Requisitos extends FormRequest
         return[
             'name.required' => 'Campo nome Obrigatorio',
             'email.required' => 'Campo E-mail Obrigatorio',
+            'email.email' => 'Necessário enviar um e-mail válido! example@site.com',
+            'email.unique' => 'E-mail já cadastrado',
             'password.required'=> 'Campo senha Obrigatorio',
             'password.min' => 'A senha deve conter no mínimo ou :min caracteres',
         ];

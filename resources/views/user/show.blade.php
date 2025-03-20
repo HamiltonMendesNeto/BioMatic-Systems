@@ -8,7 +8,9 @@
 </head>
 <body>
 
-    <a href="{{route('user.controle')}}"> Listar </a>
+    <a href="{{route('user.controle')}}">Lista de Usuários</a> <br>
+    <a href="{{route('user.editar', ['user' => $user->id])}}">Editar Usuário</a><br>
+
     <h1>Visualizar Usuário</h1>
 
     ID: {{ $user->id}} <br>

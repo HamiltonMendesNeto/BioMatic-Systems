@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Requisitos;
 use App\Models\User;
+use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Http\Request;
 use Laravel\Pail\Contracts\Printer;
 
@@ -38,6 +39,23 @@ class UserController extends Controller
    }
    public function show(User $user){
       return view('user.show', ['user' => $user]);
+  }
+
+   public function editar(User $user){
+      return view('user.editar', ['user' => $user]);
+  }
+
+   public function atualizar(Requisitos $request, User $user){
+      
+      $request-> validated();
+
+      $user->update([
+         'name' => $request->name,
+         'email' => $request->email,
+         'password' => $request->password,
+      ]);
+
+      return redirect()->route('user.controle')->with('sucess', 'Usuário atualizado com sucesso');  
   }
 
    public function store(Requisitos $request){
