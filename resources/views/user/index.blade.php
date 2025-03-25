@@ -40,6 +40,11 @@
                  <div class="input-group">
                  <img src="{{ URL::asset('imagens/cadeado.png') }}" class="input-icon" alt="Senha">
                  <input class="campos" type="password" name="password" placeholder="Senha">
+
+                 <a href="{{route('user.controle')}}">controle </a>
+
+                 <center> <button id="Cadastrar_button" type="submit">Cadastrar</button></center>
+
                  </form>
                  
     @if ($errors->any())
@@ -52,11 +57,8 @@
         @endforeach
         
     @endif
-    <a href="{{route('user.controle')}}">controle </a>
                  
-                </div>
-                <center> <button id="Cadastrar_button" type="submit">Cadastrar</button></center>
-           
+                </div>           
             </form>
         </div>
     </div>

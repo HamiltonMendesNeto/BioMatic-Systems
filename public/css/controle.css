@@ -1,0 +1,124 @@
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A9D58;
+    color: #fff;
+    padding: 20px 20px;  /* Reduziu o padding para diminuir a altura */
+    position: fixed; /* Mantém o cabeçalho fixo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+  
+/* LOGO */
+.logo {
+    background-color: #ffffff;
+    color: #2cbe56;
+    padding: 10px 60px;  /* Ajustou o padding para ficar mais compacto */
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+  
+.texto-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2cbe56;
+    margin-right: 10px;
+}
+  
+/* MENU DE NAVEGAÇÃO */
+nav {
+    flex-grow: 1;  /* Faz com que o menu ocupe espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+  
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px; /* Adiciona espaço para facilitar o clique */
+    transition: background-color 0.3s;
+}
+  
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+  
+/* ÍCONES DO TOPO (PERFIL, VOLTAR, ETC.) */
+.icones {
+    display: flex;
+    align-items: center;
+}
+  
+.icones a {
+    margin-left: 20px;
+}
+  
+.icones img {
+    height: 50px;
+    width: 50px;
+}
+/* Contêiner que contém as informações do usuário */
+.user-info {
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    justify-content: space-between; /* Espaça o conteúdo uniformemente */
+    margin-bottom: 10px; /* Espaçamento entre as informações */
+}
+
+.user-info a {
+    margin-left: 10px; /* Espaçamento entre o texto e os links */
+}
+
+/* Controle geral dos links como botões */
+a#Visualizar, a#Editar {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+a#Visualizar:hover, a#Editar:hover {
+    background-color: #45a049;
+}
+h2 {
+    font-size: 40px; /* Aumenta o tamanho do título */
+    margin-top: 100px; /* Espaço entre o cabeçalho e a lista */
+    
+}
+.user-info div {
+    font-size: 20px; /* Aumenta o tamanho do texto das informações */
+}

@@ -1,0 +1,165 @@
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A9D58;
+    color: #fff;
+    padding: 20px 20px;  /* Reduziu o padding para diminuir a altura */
+    position: fixed; /* Mantém o cabeçalho fixo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+  
+/* LOGO */
+.logo {
+    background-color: #ffffff;
+    color: #2cbe56;
+    padding: 10px 60px;  /* Ajustou o padding para ficar mais compacto */
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+  
+.texto-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2cbe56;
+    margin-right: 10px;
+}
+  
+/* MENU DE NAVEGAÇÃO */
+nav {
+    flex-grow: 1;  /* Faz com que o menu ocupe espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+  
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px; /* Adiciona espaço para facilitar o clique */
+    transition: background-color 0.3s;
+}
+  
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+  
+/* ÍCONES DO TOPO (PERFIL, VOLTAR, ETC.) */
+.icones {
+    display: flex;
+    align-items: center;
+}
+  
+.icones a {
+    margin-left: 20px;
+}
+  
+.icones img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Faz a altura ocupar toda a tela */
+}
+
+/* Contêiner para o conteúdo */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 28px;
+    color: #2A9D58;
+    margin-bottom: 20px;
+}
+
+/* Links para navegação */
+a {
+    text-decoration: none;
+    color: #2A9D58;
+    font-size: 16px;
+    margin: 10px 0;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #218c44;
+}
+
+/* Estilo para exibir as informações do usuário */
+.info-item {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.info-item span {
+    font-weight: bold;
+    color: #2A9D58; /* Cor verde para os títulos das informações */
+}
+
+/* Botão de "Voltar" */
+.icones a {
+    margin-left: 20px;
+}
+
+
+
+/* Adicionando um fundo suave no corpo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A9D58;
+    color: #fff;
+    padding: 20px 20px;  /* Reduziu o padding para diminuir a altura */
+    position: fixed; /* Mantém o cabeçalho fixo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}

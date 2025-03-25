@@ -14,3 +14,5 @@ Route::get('/controle', [UserController::class, 'controle'])->name('user.control
 
 Route::get('/editar-user/{user}', [UserController::class, 'editar'])->name('user.editar');
 Route::put('/atualizar-user/{user}', [UserController::class, 'atualizar'])->name('user.atualizar');
+
+Route::delete('/apagar-user/{user}', [UserController::class, 'apagar'])->name('user.apagar');
